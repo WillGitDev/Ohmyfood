@@ -17,7 +17,7 @@ function RestaurantCard({ image, title, location, slug, isNew = false }) {
                         src={image}
                         alt="Une image d'un plat"
                         fill
-                        sizes="100vw"
+                        sizes="(min-width: 1024px) 490px, 100vw"
                     />
                     {isNew && <span className={styles.new}>Nouveau</span>}
                 </div>
